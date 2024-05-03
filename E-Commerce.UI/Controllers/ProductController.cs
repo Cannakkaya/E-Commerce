@@ -52,6 +52,7 @@ namespace E_Commerce.UI.Controllers
                         product.Image=stream.ToArray();
                     }
                 }
+
                 _productDAL.Add(product);
                 return RedirectToAction(nameof(Index));
             }
